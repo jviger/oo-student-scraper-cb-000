@@ -30,7 +30,7 @@ class Scraper
     #  student_blog = ""
     #  student_profile_quote = ""
     #  student_bio = ""
-    end
+  #end
      
     binding.pry
   end
