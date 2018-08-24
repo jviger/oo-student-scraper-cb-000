@@ -24,7 +24,8 @@ class Scraper
     social_list = {:linkedin => "", :github => "", :blog => "", :profile_quote => ""}
     social.css("a").each {|x| social_test << x.attr("href")}
         
-        social_list.each do |x| {
+        social_list.each do |x| 
+        {
              if block.include?("linkedin")
                 student_linkedin = x
              elsif  block.include?("github")
