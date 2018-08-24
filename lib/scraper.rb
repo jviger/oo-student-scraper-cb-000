@@ -31,6 +31,7 @@ class Scraper
             student_github = x
          end
     }
+  end
     
     student_blog = ""
     student_quote = ""
