@@ -26,9 +26,9 @@ class Scraper
         
         social_list.each do |x| 
         {
-             if x.include?("linkedin")
+             if x.include?("linkedin.com")
                 student_linkedin = x
-             elsif  x.include?("github")
+             elsif  x.include?("github.com")
                 student_github = x
              end
         }
