@@ -24,7 +24,7 @@ class Scraper
     social_list = {linkedin:"", github: "", blog: "", profile_quote:""}
     social.css("a").each {|x| social_links << x.attr("href")}
     
-     social_list.each do |x| 
+     social_links.each do |x| 
         {
              if x.include?("linkedin.com")
                 student_linkedin = x
