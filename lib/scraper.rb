@@ -22,8 +22,27 @@ class Scraper
     social = profile_page.css(".social-icon-container")
     social_links = []
     social_list = {linkedin:"", github: "", blog: "", profile_quote:""}
-    social.css("a").each {|x| social_test << x.attr("href")}
-        
+    social.css("a").each {|x| social_links << x.attr("href")}
+    
+     social_list.each do |x| 
+        {
+             if x.include?("linkedin.com")
+                student_linkedin = x
+             elsif  x.include?("github.com")
+                student_github = x
+             end
+        }
+      end
+    
+    student_blog = ""
+    student_quote = ""
+           social_list[:linkedin] = student_linkedin 
+           social_list[:github] = student_github
+           social_list[:blog] = student_blog
+           social_list[:profile_quote] = student_quote
+    
+    social_list
+       
        
   end
 
