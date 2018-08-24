@@ -35,7 +35,8 @@ class Scraper
     
     student_blog = ""
     student_quote = ""
-           social_list ={:linkedin=>student_linkedin, :github=>student_github, :blog=>student_blog, :profile_quote=>student_quote}
+           social_list[:linkedin] student_linkedin 
+           social_list[:github]=>student_github, :blog=>student_blog, :profile_quote=>student_quote}
     
     #.each.attr("href").value do |block|
 
