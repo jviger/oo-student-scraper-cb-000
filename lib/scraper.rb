@@ -20,7 +20,8 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     profile_page = Nokogiri::HTML(open(profile_url))
     social = profile_page.css(".social-icon-container")
-    social_list = []
+    social_links = []
+    social_list = {}
     social.css("a").each {|x| social_test << x.attr("href")}
     
     social_list.each do |x| {
@@ -30,7 +31,10 @@ class Scraper
             student_github = x
          end
     }
-           
+    
+    student_blog = ""
+    student_quote = ""
+           social_list ={linkedin: student_linkedin, github: student_github, blog: student_blog, profile_quote: student_quote}
     
     #.each.attr("href").value do |block|
 
