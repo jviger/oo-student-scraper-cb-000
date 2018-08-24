@@ -34,14 +34,7 @@ class Scraper
         }
       end
     
-    student_blog = ""
-    student_quote = ""
-           social_list[:linkedin] = student_linkedin 
-           social_list[:github] = student_github
-           social_list[:blog] = student_blog
-           social_list[:profile_quote] = student_quote
-    
-    social_list
+  
        
        
   end
