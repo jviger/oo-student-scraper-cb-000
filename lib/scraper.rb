@@ -32,7 +32,7 @@ class Scraper
     #  student_profile_quote = ""
     #  student_bio = ""
   #end
-     
+     social_test
     binding.pry
   end
 
