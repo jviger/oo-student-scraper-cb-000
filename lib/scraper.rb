@@ -30,14 +30,11 @@ class Scraper
             student_github = x
          end
     }
-           student_blog = ""
-           student_profile_quote = ""
-           student_bio = ""
-         
+           
     
     #.each.attr("href").value do |block|
 
-    binding.pry
+   
   end
 
 end
