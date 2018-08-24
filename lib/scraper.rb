@@ -29,10 +29,11 @@ class Scraper
          elsif  block.include?("github")
             student_github = x
          end
+          
            student_blog = ""
            student_profile_quote = ""
            student_bio = ""
-         end
+         
     }
     #.each.attr("href").value do |block|
 
