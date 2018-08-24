@@ -25,28 +25,17 @@ class Scraper
     
     social_list.each do |x| {
          if block.include?("linkedin")
-     student_linkedin = block.attr("href").value
-      elsif  block.include?("github")
-        student_github = block.attr("href").value
-        end
-       student_blog = ""
-       student_profile_quote = ""
-       student_bio = ""
-    end
-      
-      
+            student_linkedin = x
+         elsif  block.include?("github")
+            student_github = x
+         end
+           student_blog = ""
+           student_profile_quote = ""
+           student_bio = ""
+         end
     }
     #.each.attr("href").value do |block|
-  if block.include?("linkedin")
-   student_linkedin = block.attr("href").value
-    elsif  block.include?("github")
-      student_github = block.attr("href").value
-      end
-     student_blog = ""
-     student_profile_quote = ""
-     student_bio = ""
-  end
-     social_test
+
     binding.pry
   end
 
